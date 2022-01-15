@@ -33,7 +33,8 @@ function Row({
       return [...prev, { seat: num, row: row_num }];
     });
     setTotalCost((prev) => {
-      return prev + row_num * 10;
+      let num = ((row_num * 10) +20)
+      return prev + num;
     });
     setTotalBooked((prev) => {
       return prev + 1;
